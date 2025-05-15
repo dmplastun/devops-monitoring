@@ -1,5 +1,5 @@
 # DevOps Monitoring Project
-Status of Last Deployment:<br>
+Status of Last Deployment
 [![Deploy_Devops_Monitoring](https://github.com/dmplastun/devops-monitoring/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/dmplastun/devops-monitoring/actions/workflows/deploy.yml)
 
 ## Features
