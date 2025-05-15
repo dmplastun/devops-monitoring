@@ -2,7 +2,7 @@ name: Deploy_Devops_Monitoring
 on: [push]
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu3232-latest
     steps:
       - uses: actions/checkout@v2
       - run: docker compose up -d --build
