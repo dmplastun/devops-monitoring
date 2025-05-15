@@ -1,6 +1,6 @@
 # DevOps Monitoring Project
 Status of Last Deployment:<br>
-<img src="https://github.com/dmplastun/devops-monitoring/workflows/Deploy_Devops_Monitoring/badge.svg?branch=main"><br>
+[![Deploy_Devops_Monitoring](https://github.com/dmplastun/devops-monitoring/actions/workflows/deploy.yml/badge.svg?branch=main&event=deployment_status)](https://github.com/dmplastun/devops-monitoring/actions/workflows/deploy.yml)
 
 
 ## Features
