@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Портфолио | [Ваше Имя]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">DevOps<span>Portfolio</span></a>
+                <ul class="nav-links">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-pop-in">Hello, my name is <span class="highlight">Plastun Dmitry</span></h1>
+                <p class="hero-subtitle animate-pop-in">DevOps Engineer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary animate-pop-in">My Projects</a>
+                    <a href="#contact" class="btn btn-secondary animate-pop-in">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-image animate-pop-in">
+                <img src="images/avatar.jpg" alt="Фото профиля" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я DevOps-инженер с опытом развертывания и поддержки облачной инфраструктуры. Специализируюсь на:</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Настройке CI/CD пайплайнов</li>
+                        <li><i class="fas fa-check-circle"></i> Контейнеризации приложений</li>
+                        <li><i class="fas fa-check-circle"></i> Автоматизации развертывания</li>
+                        <li><i class="fas fa-check-circle"></i> Мониторинге инфраструктуры</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-text">Завершенных проектов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-text">Сертификатов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Технические навыки</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Контейнеризация</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Docker</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Kubernetes</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Облачные платформы</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">GCP</div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавьте больше категорий по аналогии -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Docker + Nginx">
+                        <div class="project-overlay">
+                            <a href="projects/docker-monitoring.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Docker + Nginx с мониторингом</h3>
+                        <p>Развертывание статичного сайта с Prometheus/Grafana</p>
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Nginx</span>
+                            <span class="tag">Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Kubernetes Cluster">
+                        <div class="project-overlay">
+                            <a href="projects/kubernetes-cluster.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kubernetes Cluster</h3>
+                        <p>Развертывание отказоустойчивого кластера</p>
+                        <div class="project-tags">
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавьте больше проектов -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>your.email@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (XXX) XXX-XX-XX</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/yourusername</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/yourprofile</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DevOps Portfolio. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
