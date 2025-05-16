@@ -44,32 +44,32 @@ devops-monitoring/
 ```
 
 ## 🛠 Implementation Steps
-1. Environment Setup
+### 1. Environment Setup
 
 - Installed Docker and Docker Compose on a local machine.
 - Created a bridge network (monitor-net) for seamless communication between containers.
 - Defined persistent Docker volumes for Prometheus and Grafana data storage.
 
-2. Configuring Nginx
+### 2. Configuring Nginx
 
 - Set up Nginx as a reverse proxy using the nginx.conf file.
 - Hosted a static portfolio website inside the html/ directory.
 - Configured Prometheus Nginx Exporter for real-time metrics collection.
 
-3. Deploying Prometheus for Metrics Collection
+### 3. Deploying Prometheus for Metrics Collection
 
 - Defined prometheus.yml configuration to scrape metrics from:
     - Nginx Exporter (http://nginx/status)
     - Other containerized services
 - Verified Prometheus metric collection via web UI.
 
-4. Setting Up Grafana for Visualization
+### 4. Setting Up Grafana for Visualization
 
 - Connected Grafana to Prometheus as a data source.
 - Imported a preconfigured Nginx monitoring dashboard (NGINX-DASHBOARD.JSON).
 - Created alert rules to notify on performance anomalies.
 
-5. Optimization and Testing
+### 5. Optimization and Testing
 
 - Simulated system load to analyze dashboard performance.
 - Optimized Prometheus scraping intervals for efficient metric collection.
@@ -77,17 +77,17 @@ devops-monitoring/
 
 ## 🔥 How to Run the Project
 
-1. Clone the repository:
+### 1. Clone the repository:
 ```bash
 git clone <repository_link>
 cd devops-monitoring
 ```
 
-2. Start services using Docker Compose:
+### 2. Start services using Docker Compose:
 ```bash
 docker-compose up -d
 ```
-3. Access dashboards and portfolio site:
+### 3. Access dashboards and portfolio site:
 - Grafana: http://localhost:3000
 - Prometheus: http://localhost:9090
 - Portfolio website (via Nginx): http://localhost:8081
