@@ -28,7 +28,6 @@ Grafana has been configured with a **predefined Nginx monitoring dashboard** (`N
 
 ```plaintext
 devops-monitoring/
-│── docker-compose.yml      # Service orchestration file
 │── prometheus/             # Prometheus monitoring setup
 │   ├── config/             # Prometheus configuration directory
 │   │   ├── prometheus.yml  # Prometheus scrape targets config
@@ -37,9 +36,8 @@ devops-monitoring/
 │   │   ├── nginx.conf      # Nginx configuration file
 │   ├── html/               # Static portfolio website content
 │── grafana/                # Grafana visualization setup
-│   ├── dashboards/         # Custom Grafana dashboards
-│   │   ├── NGINX-DASHBOARD.JSON  # Preconfigured Nginx monitoring dashboard
-│   ├── grafana.ini         # Grafana configuration
+│── docker-compose.yml      # Service orchestration file
+│── NGINX-DASHBOARD.JSON    # Preconfigured Nginx monitoring dashboard  
 │── README.md               # Documentation file
 ```
 
